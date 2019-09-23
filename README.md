@@ -75,6 +75,9 @@ When you're finished, send your git repo link to Michael Klein at michael@canary
 
 ## My work
 I've decided to follow the same query constructions that were set up in the project, using the SQLite syntax.
+
 Most of the endpoints return a result from the SQLite query itself, without having to compute anything more in Python.
+
 I did have a little more trouble with the median and the quartiles where I had to use some logic in Python after retrieving the results.
+
 I could have added a decorator method to add to all the other methods and taking care of checking the missing data and to create the SQLite connection to the DataBase but I didn't want to have to handle objects from the 'g' global variale, it didn't feel necessary for that program.
